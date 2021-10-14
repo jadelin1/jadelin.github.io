@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于, 小詹 jadelin  SQL注入 web渗透 信息安全 免杀 内网渗透 信息收集 个人技巧 小詹的博客">
-    <meta name="description" content="关于 | 小詹的博客">
+    <meta name="keywords" content="关于, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
+    <meta name="description" content="关于 | jadelin的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于 | 小詹的博客</title>
+    <title>关于 | jadelin的博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/medias/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -39,7 +39,7 @@
                     
                     <img src="/medias/favicon.ico" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">小詹的博客</span>
+                    <span class="logo-span">jadelin的博客</span>
                 </a>
             </div>
             
@@ -137,10 +137,10 @@
         
         <img src="/medias/favicon.ico" class="logo-img circle responsive-img">
         
-        <div class="logo-name">小詹的博客</div>
+        <div class="logo-name">jadelin的博客</div>
         <div class="logo-desc">
             
-            SQL注入 | web渗透 | 信息安全 | 免杀 | 内网渗透 | CTF | 应急响应 | 内存取证 | 流向分析 | 信息收集 | 个人技巧
+            后来听着风 看着秋 孤独的人总是不会善言辞.
             
         </div>
     </div>
@@ -199,7 +199,7 @@
                 
                 <i class="fa-fw fas fa-address-book"></i>
                 
-                关于
+                
             </a>
             
         </li>
@@ -301,10 +301,40 @@
 
 </header>
 
-    <style type="text/css">
+    <!-- 网站全局深色模式设置开始 -->
+<script>
+    if (localStorage.getItem('dark') === '1') {
+    document.body.classList.add('dark');
+    }
+    //  else if (new Date().getHours() >= 22 || new Date().getHours() < 7) {
+    // document.body.classList.add('dark');
+    // } 
+    else if (matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark');
+    }
+</script>
+<a onclick="switchNightMode()" id="sma">
+    <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i>
+</a>
+<!-- 网站全局深色模式设置结束 -->
+<!-- 添加首页banner视频背景开始 -->
+<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/16/22/BMjAyMTA0MTYyMjI2MjJfMTg1ODk2MDg4N180NzkzNzE2MzM1NF8xXzM=_b_B1cee98c70455b5ec6bdf05a3b739b606.mp4?pkey=AAUB10mjUylh71C1rT9zUK0k7UZXKh1t4JWavNQoALGAQ6zneNmw9-AJVJdj34LwUjF_C7Nvu_N3ZiM0NeFWVZ3HcLV-HnVcDlk07fDiX_9gwyjYVtx0HdfgCak15LCtfdw&tag=1-1618583324-xpcwebprofile-0-3swr1wcvno-ca64b2bbd036006d&clientCacheKey=3xdk95zbjuu2b4q_b.mp4"> -->
+    <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/09/BMjAyMTA0MTcwOTU1MzlfMTg1ODk2MDg4N180Nzk1MzM5OTIyOV8xXzM=_b_Bb252492fbcbbfc1729d70bff84a369c1.mp4?pkey=AAUyFZx1DUzqe5a0YzevoNiJ5H4y-8qHn-6CxvZWGq3f7eaAZkH4TQ0MlCby2tu8KDKdjqFPWc6uK2CU6EynJwbOK4jy6fWaXpMJ4Jg2VONv2g4UEnb2QYdrZr9b_rI9yYE&tag=1-1618624606-xpcwebprofile-0-m7ojwj7hjp-39b38c9093fe954a&clientCacheKey=3x7baqkyiuj45k2_b.mp4"> -->
+    <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/11/BMjAyMTA0MTcxMTI4MTFfMTg1ODk2MDg4N180Nzk1ODkxODA3NV8xXzM=_b_B9a29e9e0917f8f86ff3a9aacaaf8d9d3.mp4">
+</video>
+<!-- 添加首页banner视频背景结束 -->
+
+<style type="text/css">
     /* don't remove. */
     .about-cover {
-        height: 75vh;
+        height: 115vh;
     }
 </style>
 
@@ -315,21 +345,21 @@
         <div class="brand">
             <div class="title center-align">
                 <!-- 
-                小詹
+                jadelin
                  -->
                 
                 关于
                 
             </div>
 
-            <div class="description center-align">
-                <span id="poem_sentence">正在加载今日诗词...</span>
+             <div class="description center-align">
+                <!--<span id="poem_sentence">正在加载今日诗词...</span>
                 <span id="poem_info"></span>
                 <!-- 每日切换诗词 -->
-                <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                <!--<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>-->
                 
-                <!-- SQL注入 | web渗透 | 信息安全 | 免杀 | 内网渗透 | CTF | 应急响应 | 内存取证 | 流向分析 | 信息收集 | 个人技巧 -->
-                <script>
+                <!-- 后来听着风 看着秋 孤独的人总是不会善言辞. -->
+                <script> 
                     var sentence = document.querySelector("#poem_sentence");
                     var info = document.querySelector("#poem_info");
                     jinrishici.load(function (result) {
@@ -350,8 +380,11 @@
     $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
+
     </div>
 </div>
+
+
 
 <main class="content">
 
@@ -362,21 +395,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">4</a></span>
+    <span class="count"><a href="/">6</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">5</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">1</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -385,34 +418,34 @@
                     <div class="col s12 m12 l4">
                         <div class="profile center-align">
                             <div class="avatar">
-                                <img src="/medias/avatars/my-pic.jpeg" alt="小詹"
+                                <img src="/medias/avatars/my-pic.jpeg" alt="jadelin"
                                      class="circle responsive-img avatar-img">
                             </div>
                             <div class="author">
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">4</a></span>
+    <span class="count"><a href="/">6</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">5</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">1</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
 
                                 </div>
-                                <div class="title">小詹</div>
+                                <div class="title">jadelin</div>
                                 <div class="career">web渗透 | 内网渗透</div>
                                 <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                                     
@@ -538,7 +571,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07"]
+            data: ["2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10"]
         },
         yAxis: {
             type: 'value',
@@ -548,7 +581,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,0,0,0,0,0,0,0,0,5,0,0,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -590,7 +623,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"npm","value":1}],
+                data: [{"name":"SQL注入","value":1},{"name":"npm","value":1},{"name":"-web渗透","value":2},{"name":"-SQL注入","value":1},{"name":"-免杀","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -614,7 +647,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["npm"]
+                data: ["-SQL注入","npm","-工具","-web渗透","-免杀"]
             }
         ],
         yAxis: [
@@ -627,7 +660,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1],
+                data: [2,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -791,8 +824,32 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/SQL%E6%B3%A8%E5%85%A5/">
+                <span class="chip center-align waves-effect waves-light chip-default">-SQL注入</span>
+            </a>
+            
+            
+            
             <a href="/tags/npm/">
                 <span class="chip center-align waves-effect waves-light chip-default">npm</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%B7%A5%E5%85%B7/">
+                <span class="chip center-align waves-effect waves-light chip-default">-工具</span>
+            </a>
+            
+            
+            
+            <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                <span class="chip center-align waves-effect waves-light chip-default">-web渗透</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%85%8D%E6%9D%80/">
+                <span class="chip center-align waves-effect waves-light chip-default">-免杀</span>
             </a>
             
             
@@ -864,10 +921,10 @@
         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 25 copy-right">
             @&nbsp;<span id="year">2020</span>
-            <a href="http://jadelin.vip" target="_blank">小詹</a>
+            <a href="http://jadelin.top" target="_blank">jadelin</a>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.7k</span>&nbsp;字
+                class="white-color">7.6k</span>&nbsp;字
             
             
             

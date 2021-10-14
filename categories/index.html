@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, 小詹 jadelin  SQL注入 web渗透 信息安全 免杀 内网渗透 信息收集 个人技巧 小詹的博客">
-    <meta name="description" content="分类 | 小詹的博客">
+    <meta name="keywords" content="分类, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
+    <meta name="description" content="分类 | jadelin的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类 | 小詹的博客</title>
+    <title>分类 | jadelin的博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/medias/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -39,7 +39,7 @@
                     
                     <img src="/medias/favicon.ico" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">小詹的博客</span>
+                    <span class="logo-span">jadelin的博客</span>
                 </a>
             </div>
             
@@ -137,10 +137,10 @@
         
         <img src="/medias/favicon.ico" class="logo-img circle responsive-img">
         
-        <div class="logo-name">小詹的博客</div>
+        <div class="logo-name">jadelin的博客</div>
         <div class="logo-desc">
             
-            SQL注入 | web渗透 | 信息安全 | 免杀 | 内网渗透 | CTF | 应急响应 | 内存取证 | 流向分析 | 信息收集 | 个人技巧
+            后来听着风 看着秋 孤独的人总是不会善言辞.
             
         </div>
     </div>
@@ -199,7 +199,7 @@
                 
                 <i class="fa-fw fas fa-address-book"></i>
                 
-                关于
+                
             </a>
             
         </li>
@@ -308,21 +308,21 @@
         <div class="brand">
             <div class="title center-align">
                 <!-- 
-                小詹
+                jadelin
                  -->
                 
                 分类
                 
             </div>
 
-            <div class="description center-align">
-                <span id="poem_sentence">正在加载今日诗词...</span>
+             <div class="description center-align">
+                <!--<span id="poem_sentence">正在加载今日诗词...</span>
                 <span id="poem_info"></span>
                 <!-- 每日切换诗词 -->
-                <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                <!--<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>-->
                 
-                <!-- SQL注入 | web渗透 | 信息安全 | 免杀 | 内网渗透 | CTF | 应急响应 | 内存取证 | 流向分析 | 信息收集 | 个人技巧 -->
-                <script>
+                <!-- 后来听着风 看着秋 孤独的人总是不会善言辞. -->
+                <script> 
                     var sentence = document.querySelector("#poem_sentence");
                     var info = document.querySelector("#poem_info");
                     jinrishici.load(function (result) {
@@ -343,8 +343,11 @@
     $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
+
     </div>
 </div>
+
+
 
 <main class="content">
 
@@ -360,10 +363,46 @@
                 
                 
                 
+                <a href="/categories/SQL%E6%B3%A8%E5%85%A5/" title="SQL注入: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9EBEA;">SQL注入
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/categories/npm/" title="npm: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">npm
+                            style="background-color: #F5EEF8;">npm
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/web%E6%B8%97%E9%80%8F/" title="-web渗透: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">-web渗透
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/SQL%E6%B3%A8%E5%85%A5/" title="-SQL注入: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">-SQL注入
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%85%8D%E6%9D%80/" title="-免杀: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #FEF9E7;">-免杀
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -410,7 +449,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"npm","max":2}],
+            indicator: [{"name":"SQL注入","max":3},{"name":"npm","max":3},{"name":"-web渗透","max":3},{"name":"-SQL注入","max":3},{"name":"-免杀","max":3}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -421,7 +460,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1],
+                    value : [1,1,2,1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -447,10 +486,10 @@
         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 25 copy-right">
             @&nbsp;<span id="year">2020</span>
-            <a href="http://jadelin.vip" target="_blank">小詹</a>
+            <a href="http://jadelin.top" target="_blank">jadelin</a>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.7k</span>&nbsp;字
+                class="white-color">7.6k</span>&nbsp;字
             
             
             
