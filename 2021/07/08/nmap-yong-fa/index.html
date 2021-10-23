@@ -26,7 +26,10 @@
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="jadelin的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -493,7 +496,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h2><p>NMAP是由GOrdon Lyon设计并实现的，于1997开始发布。最初设计NMAP的目的只是要打造一款强大的端口扫描工具。但随着时间的发展，NMAP的功能越来越全面，从简单的网络连接端口扫描工具变身成为全方位的安全和网络工具组件。<br>具备的主要功能：<br>1、主机发现端口扫描<br>2、服务和版本检测<br>3、操作系统检测<br>除了这些基本功能以外，NMAP还实现了一些高级审计功能，例如：我伪造发起端口扫描的身份，进行隐蔽扫描，对系统进行安全漏洞检测等….</p>
-<h2 id="Nmap-典型用途："><a href="#Nmap-典型用途：" class="headerlink" title="Nmap 典型用途："></a>Nmap 典型用途：</h2><p>主机发现-识别网络上的主机。例如列出响应TCP和/或ICMP请求或打开特定端口的主机。<br>端口扫描 - 枚举目标主机上的开放端口。<br>版本检测 - 询问远程设备上的网络服务以确定应用程序名称和版本号。<br>OS检测 - 确定网络设备的操作系统和硬件特性。<br>软件版本检测脆弱性的漏洞（Nmap的脚本）</p>
+<h2 id="Nmap-典型用途："><a href="#Nmap-典型用途：" class="headerlink" title="Nmap&nbsp;典型用途："></a>Nmap&nbsp;典型用途：</h2><p>主机发现-识别网络上的主机。例如列出响应TCP和/或ICMP请求或打开特定端口的主机。<br>端口扫描&nbsp;-&nbsp;枚举目标主机上的开放端口。<br>版本检测&nbsp;-&nbsp;询问远程设备上的网络服务以确定应用程序名称和版本号。<br>OS检测&nbsp;-&nbsp;确定网络设备的操作系统和硬件特性。<br>软件版本检测脆弱性的漏洞（Nmap的脚本）</p>
 <h2 id="Nmap常用扫描参数说明"><a href="#Nmap常用扫描参数说明" class="headerlink" title="Nmap常用扫描参数说明"></a>Nmap常用扫描参数说明</h2><p><img src="1.png"></p>
 <h2 id="Nmap脚本分类"><a href="#Nmap脚本分类" class="headerlink" title="Nmap脚本分类"></a>Nmap脚本分类</h2><pre class="line-numbers language-js"><code class="language-js">auth<span class="token punctuation">:</span> 负责处理鉴权证书（绕开鉴权）的脚本  
 
@@ -528,18 +531,18 @@ nmap <span class="token operator">-</span>sP <span class="token number">192.168<
 使用频率最高的扫描选项：SYN扫描<span class="token punctuation">,</span>又称为半开放扫描，它不打开一个完全的TCP连接，执行得很快，效率高（一个完整的tcp连接需要<span class="token number">3</span>次握手，而<span class="token operator">-</span>sS选项不需要<span class="token number">3</span>次握手）
 优点：Nmap发送SYN包到远程主机，但是它不会产生任何会话，目标主机几乎不会把连接记入系统日志。（防止对方判断为扫描攻击），扫描速度快，效率高，在工作中使用频率最高
 缺点：它需要root<span class="token operator">/</span>administrator权限执行
-nmap  <span class="token operator">-</span>sS <span class="token operator">-</span>p <span class="token number">1</span><span class="token operator">-</span><span class="token number">65535</span>  <span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">3.16</span>   （扫描目标开放的所有端口<span class="token operator">-</span>半开式）
+nmap<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">-</span>sS<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">-</span>p <span class="token number">1</span><span class="token operator">-</span><span class="token number">65535</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">3.16</span>   （扫描目标开放的所有端口<span class="token operator">-</span>半开式）
 
 sT：<span class="token number">3</span>次握手方式tcp的扫描
 优点：普通用户也可以使用。
-缺点：这种扫描很容易被检测到，在目标主机的日志中会记录大批的连接请求以及错误信息，由于它要完成<span class="token number">3</span>次握手，效率低，速度慢，建议使用<span class="token operator">-</span>sS 
+缺点：这种扫描很容易被检测到，在目标主机的日志中会记录大批的连接请求以及错误信息，由于它要完成<span class="token number">3</span>次握手，效率低，速度慢，建议使用<span class="token operator">-</span>sS<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>
 
 <span class="token function">sV：扫描目标地址开放服务</span><span class="token punctuation">(</span>端口<span class="token punctuation">)</span><span class="token function">版本</span><span class="token punctuation">(</span>sV<span class="token punctuation">)</span>
-版本检测是用来扫描目标主机和端口上运行的软件的版本，如下扫描，多出了ssh的版本信息 。
+版本检测是用来扫描目标主机和端口上运行的软件的版本，如下扫描，多出了ssh的版本信息<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>。
 nmap <span class="token operator">-</span>sV <span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">3.16</span>
 
 <span class="token operator">-</span>O：扫描目标地址进行操作系统版本
-nmap <span class="token operator">-</span>O <span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">3.16</span>
+nmap<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">-</span>O<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">3.16</span>
 
 <span class="token operator">-</span>A：OS识别<span class="token punctuation">,</span>版本探测<span class="token punctuation">,</span>脚本扫描和综合扫描
 nmap <span class="token operator">-</span>A <span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">3.16</span>
@@ -1479,7 +1482,7 @@ tcp <span class="token number">50070</span><span class="token punctuation">,</sp
             <a href="http://jadelin.top" target="_blank">jadelin</a>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.9k</span>&nbsp;字
+                class="white-color">7.8k</span>&nbsp;字
             
             
             
