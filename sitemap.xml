@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://jadelin.top/categories/index.html</loc>
+    
+    <lastmod>2020-03-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jadelin.top/404.html</loc>
     
     <lastmod>2020-03-07</lastmod>
@@ -80,13 +87,6 @@
   
   <url>
     <loc>http://jadelin.top/archives/index.html</loc>
-    
-    <lastmod>2020-03-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jadelin.top/categories/index.html</loc>
     
     <lastmod>2020-03-07</lastmod>
     
@@ -160,14 +160,14 @@
   </url>
   
   <url>
-    <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>http://jadelin.top/categories/web%E6%B8%97%E9%80%8F/</loc>
     <lastmod>2021-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jadelin.top/categories/web%E6%B8%97%E9%80%8F/</loc>
+    <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2021-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
