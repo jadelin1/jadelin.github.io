@@ -6,7 +6,7 @@
   <link href="http://jadelin.top/atom.xml" rel="self"/>
   
   <link href="http://jadelin.top/"/>
-  <updated>2021-10-20T10:46:05.688Z</updated>
+  <updated>2022-05-30T02:10:42.961Z</updated>
   <id>http://jadelin.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>比赛poc</title>
+    <link href="http://jadelin.top/2022/05/30/bi-sai-poc/"/>
+    <id>http://jadelin.top/2022/05/30/bi-sai-poc/</id>
+    <published>2022-05-30T01:02:35.000Z</published>
+    <updated>2022-05-30T02:10:42.961Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;web&quot;&gt;&lt;a href=&quot;#web&quot; class=&quot;headerlink&quot; title=&quot;web&quot;&gt;&lt;/a&gt;web&lt;/h1&gt;&lt;h2 id=&quot;web1&quot;&gt;&lt;a href=&quot;#web1&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="-web渗透" scheme="http://jadelin.top/categories/web%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="-web渗透" scheme="http://jadelin.top/tags/web%E6%B8%97%E9%80%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>加油！</title>
@@ -71,7 +96,7 @@
     <link href="http://jadelin.top/2021/07/08/mssql-lian-he-zhu-ru/"/>
     <id>http://jadelin.top/2021/07/08/mssql-lian-he-zhu-ru/</id>
     <published>2021-07-08T13:48:18.000Z</published>
-    <updated>2021-07-25T07:37:30.434Z</updated>
+    <updated>2022-05-30T00:43:59.579Z</updated>
     
     
       
@@ -121,7 +146,7 @@
     <link href="http://jadelin.top/2021/07/08/nmap-yong-fa/"/>
     <id>http://jadelin.top/2021/07/08/nmap-yong-fa/</id>
     <published>2021-07-08T12:20:51.000Z</published>
-    <updated>2021-07-08T12:36:08.774Z</updated>
+    <updated>2022-05-30T00:43:39.189Z</updated>
     
     
       
