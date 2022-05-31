@@ -4,11 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="过火绒静态免杀, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
-    <meta name="description" content="前言最近在研究  免杀 内的问题，碰到一些相关问题，算是整理一下。
-概述远控源代码免杀过火绒，基于国内的杀毒软件的特征检查，大多数都是用的特征库类的去检查。
-360的云引擎比较厉害，感觉火绒有点low。
-杀毒原理解析国内比较出名的有360、">
+    <meta name="keywords" content="记学校旁站测试, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
+    <meta name="description" content="前言 在校无聊的时候上学校网站逛了一波波，无意间点开了一个网站。
+
+这我匝一看，这页面，这界面感动啊。抱着尝试的心态试了一试。
+头像和相册都可以文件上传成功。
+
+然后bp重放了，
+
+上传成功
+
+还好不是跟网络教学平台那个网站一样坑，找不到上">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +22,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>过火绒静态免杀 | jadelin的博客</title>
+    <title>记学校旁站测试 | jadelin的博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/medias/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -329,7 +335,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">过火绒静态免杀</h1>
+                    <h1 class="description center-align post-title">记学校旁站测试</h1>
                 </div>
             </div>
         </div>
@@ -446,8 +452,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%85%8D%E6%9D%80/">
-                                <span class="chip bg-color">-免杀</span>
+                            <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                                <span class="chip bg-color">-web渗透</span>
                             </a>
                         
                     </div>
@@ -458,8 +464,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%85%8D%E6%9D%80/" class="post-category">
-                                -免杀
+                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="post-category">
+                                -web渗透
                             </a>
                         
                     </div>
@@ -471,7 +477,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-08
+                    2021-12-13
                 </div>
                 
 
@@ -480,14 +486,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    130
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 				
@@ -503,45 +509,19 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在研究  <code>免杀</code> 内的问题，碰到一些相关问题，算是整理一下。</p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>远控源代码免杀过火绒，基于国内的杀毒软件的<code>特征检查</code>，大多数都是用的<code>特征库</code>类的去检查。</p>
-<p><code>360</code>的云引擎比较厉害，感觉<code>火绒</code>有点low。</p>
-<h3 id="杀毒原理解析"><a href="#杀毒原理解析" class="headerlink" title="杀毒原理解析"></a>杀毒原理解析</h3><p>国内比较出名的有<code>360</code>、<code>腾讯电脑管家</code>、<code>火绒</code>、<code>金山毒霸</code>、<code>瑞星</code>等等，这几个杀毒软件，国内大多数应该都是<code>火绒</code>和<code>360</code></p>
-<p>国外的比较出名的<code>火眼</code>，<code>诺顿</code>，<code>卡巴</code>，<code>微软</code>自带的那个，</p>
-<p>现在的杀毒软件都无法脱离三个部分，<code>扫描器</code>、<code>病毒库</code>、<code>虚拟机</code>。</p>
-<p>然而一个杀毒软件做的是否好用，最主要的还是扫描器的速度、准确率以及病毒库是否庞大。</p>
-<h3 id="基于特征码的静态扫描技术"><a href="#基于特征码的静态扫描技术" class="headerlink" title="基于特征码的静态扫描技术"></a>基于特征码的静态扫描技术</h3><p>这种技术很容易被人想到，所以第一代的杀毒软件出现了，他们的杀毒思想就是，</p>
-<p>我只要在特征库中匹配到已知的病毒特征字符串（一般都是 <code>MD5值</code> ）就可以判断出来这个文件是一个病毒。</p>
-<p>但这种方法在当今病毒技术迅猛发展的形势下已经起不到很好的作用了。不好用就是已经过时了 <code>火绒</code>就是</p>
-<p>用的这种技术。</p>
-<h3 id="基于特征码的云引擎查杀技术"><a href="#基于特征码的云引擎查杀技术" class="headerlink" title="基于特征码的云引擎查杀技术"></a>基于特征码的云引擎查杀技术</h3><p>国内 <code>360</code> 的云引擎查杀不得不说是真的厉害。 <code>云引擎</code>查杀，顾名思义就是扫描一个文件，带入到云端去扫描</p>
-<p>360属于驱动级别的查杀，驱动级别简单理解：打个比方，你电脑中安装了360，它会监控你整个电脑的所有程序，</p>
-<p>你的任务管理器里面的所有程序，包括程序后面续执行所有危险的操作，它都会监控。我记得以前打游戏的时候，</p>
-<p>启动游戏360会自动进入一个游戏模式，360在平时会很占你的内存，因为360也会监控内存。</p>
-<p>360 能检测驱动程序，内存，可执行程序。基本上360能监测很多了，它是基于云引擎查杀的，而火绒是基于特征库</p>
-<p>监测的。</p>
-<h3 id="我所认知能拿shell的木马"><a href="#我所认知能拿shell的木马" class="headerlink" title="我所认知能拿shell的木马"></a>我所认知能拿shell的木马</h3><p>个人现在所知道能拿shell的木马可分为：<code>网马</code>、<code>驱动马</code>、<code>内存马</code>、<code>可执行程序马</code>、</p>
-<p><code>网马</code>：<code>网马</code>就是上传到web服务器里面，主要以拿到webshell。</p>
-<p><code>驱动马</code>：听名字应该知道它的意思。简单理解就是，你的电脑启动的时候会启动驱动程序，而别人在你的驱动里面植入了木马，你启动电脑的时候，木马也会自动运行。</p>
-<p><code>内存马</code>：内存马原理大概上跟驱动马类似</p>
-<p><code>可执行程序马</code>：在你启动，或者点开执行一个程序的时候，它才回运行。一般来说你只要不点开它就没事儿。</p>
-<p><code>木马</code>其实就是执行一些<code>高危</code>的操作，或者是执行一些<code>高危</code>的权限的程序，木马在执行的时候会触<code>发行为特征</code>，本偏介绍的<br>就是如何过<code>火绒免杀</code>。</p>
-<h3 id="远控源码免杀"><a href="#远控源码免杀" class="headerlink" title="远控源码免杀"></a>远控源码免杀</h3><h4 id="0x1"><a href="#0x1" class="headerlink" title="0x1"></a>0x1</h4><p>先生成一个木马.<br><img src="1.png"></p>
-<h4 id="0x2"><a href="#0x2" class="headerlink" title="0x2"></a>0x2</h4><p>查看查杀情况.可以看到报了风险详情.<br><img src="2.png"></p>
-<h4 id="0x3"><a href="#0x3" class="headerlink" title="0x3"></a>0x3</h4><p>下面来进行免杀.<br>fuck.dat 是远控生成木马的文件，把.dat免杀了，文件下面生成的所有小马都会免杀。<br>点开工具导入.dat文件，分块数量修改掉，点生成。<br><img src="3.png"></p>
-<h4 id="0x4"><a href="#0x4" class="headerlink" title="0x4"></a>0x4</h4><p>在文件夹中会有生成的20个文件，把它全部选中，右键查杀。<br><img src="4.png"></p>
-<h4 id="0x5"><a href="#0x5" class="headerlink" title="0x5"></a>0x5</h4><p>会发现有三个风险，给它处理掉。说明有三个是有木马特征的<br><img src="5.png"></p>
-<h4 id="0x6"><a href="#0x6" class="headerlink" title="0x6"></a>0x6</h4><p>点击二次处理，会在生成20个文件，然后再右键查杀会发现，未发现风险。说明这20个文件里面是没有特征的<br><img src="6.png"></p>
-<h4 id="0x7"><a href="#0x7" class="headerlink" title="0x7"></a>0x7</h4><p>特征区间会显示一个特征，但是这个不是他真实的特征。因为我们要定位到它后面的两位数或者三位数<br><img src="7.png"></p>
-<h4 id="0x8"><a href="#0x8" class="headerlink" title="0x8"></a>0x8</h4><p>右键复合定位，分块数量还是改成20，不然会生成很多个，不好定位。<br><img src="8.png"></p>
-<h4 id="0x9"><a href="#0x9" class="headerlink" title="0x9"></a>0x9</h4><p>复合定位后会生成后，还是一样接着在文件夹中查杀。在点击二次处理，一直二次处理，直到查不出来。<br><img src="9.png"></p>
-<h4 id="0x2x1"><a href="#0x2x1" class="headerlink" title="0x2x1"></a>0x2x1</h4><p>特征区间会出现两个特征码，接着复合定位。接着改成生成20，然后在查杀，在二次处理，直到查不出来。<br><img src="10.png"></p>
-<h4 id="0x2x2"><a href="#0x2x2" class="headerlink" title="0x2x2"></a>0x2x2</h4><p>一直复合定位，生成，查杀，二次处理，查杀。复合定位，生成，查杀，二次处理，查杀<br>直到查杀不出来，特征区间的特征码为002结尾，长度为2。  这个就是我们查杀出来的特征码<br>保存下来。<br><img src="11.png"></p>
-<h4 id="0x2x3"><a href="#0x2x3" class="headerlink" title="0x2x3"></a>0x2x3</h4><p>打开C32Asm，把.dat文件导入进去，辅助我们查找，输入刚才查到的两个特征码，看查杀的哪些地方。<br><img src="12.png"><br><img src="13.png"></p>
-<h4 id="0x2x4"><a href="#0x2x4" class="headerlink" title="0x2x4"></a>0x2x4</h4><p>把.dsw文件导入vc中，应为这款远控是c++写的，我们导入的这个文件，它是这款程序生服务端和客户端的源文件，<br>查找ServerDll，因为我们特征定位是查出来这两个位置被杀了。直接查找<br><img src="14.png"></p>
-<h4 id="0x2x5"><a href="#0x2x5" class="headerlink" title="0x2x5"></a>0x2x5</h4><p>在vc中查找刚才我们被杀的两个地方。<br><img src="15.png"><br><img src="16.png"></p>
-<h4 id="0x2x6"><a href="#0x2x6" class="headerlink" title="0x2x6"></a>0x2x6</h4><p>第一个改掉相关的关键字，第二个直接注释掉，没什么用的鸡肋功能。<br><img src="18.png"><br><img src="19.png"></p>
-<h4 id="0x2x7"><a href="#0x2x7" class="headerlink" title="0x2x7"></a>0x2x7</h4><p>最终版本，加上线。<br><img src="20.png"><br><img src="21.png"></p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> 在校无聊的时候上学校网站逛了一波波，无意间点开了一个网站。</p>
+<p><img src="1.png"></p>
+<p>这我匝一看，这页面，这界面感动啊。抱着尝试的心态试了一试。</p>
+<p>头像和相册都可以文件上传成功。</p>
+<p><img src="2.png"></p>
+<p><code>然后bp重放了，</code></p>
+<p><img src="3.png"></p>
+<p><code>上传成功</code></p>
+<p><img src="3.jpg"></p>
+<p>还好不是跟网络教学平台那个网站一样坑，找不到上传文件的路径。</p>
+<p>在源码里面找到了路径，直接连接一波。</p>
+<p><img src="4.jpg"></p>
+<p>还是个root权限，哈哈。</p>
 
             </div>
             <hr/>
@@ -567,7 +547,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jadelin.top/2021/07/08/guo-huo-rong-mian-sha/">http://jadelin.top/2021/07/08/guo-huo-rong-mian-sha/</a>
+                    <a href="http://jadelin.top/2021/12/13/ji-xue-xiao-pang-zhan-ce-shi/">http://jadelin.top/2021/12/13/ji-xue-xiao-pang-zhan-ce-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -605,8 +585,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%85%8D%E6%9D%80/">
-                                    <span class="chip bg-color">-免杀</span>
+                                <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                                    <span class="chip bg-color">-web渗透</span>
                                 </a>
                             
                         </div>
@@ -770,7 +750,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-07-08T15-52-48',
+        id: '2021-12-13T23-52-55',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1088,24 +1068,35 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/08/nmap-yong-fa/">
+                <a href="/2022/05/30/bi-sai-poc/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="nmap用法：">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="比赛poc">
                         
-                        <span class="card-title">nmap用法：</span>
+                        <span class="card-title">比赛poc</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            nmapNMAP是由GOrdon Lyon设计并实现的，于1997开始发布。最初设计NMAP的目的只是要打造一款强大的端口扫描工具。但随着时间的发展，NMAP的功能越来越全面，从简单的网络连接端口扫描工具变身成为全方位的安全和网络工具组件。
+                            webweb1robots.txt协议
+
+
+web2简单sql注入
+先查看有几个字段
+1’ order by 4#
+
+联合查询，查数据库
+?id=-1’ union select 1,2,3,database()#
+
+联合查询数据库的表
+i
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-30
                         </span>
                         <span class="publish-author">
                             
@@ -1122,8 +1113,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                        <span class="chip bg-color">-工具</span>
+                    <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                        <span class="chip bg-color">-web渗透</span>
                     </a>
                     
                 </div>
@@ -1137,31 +1128,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/29/npm-kan-zhe-pian-jiu-gou-liao/">
+                <a href="/2021/07/10/ctf-lian-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="npm,看这篇就够了">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="加油！">
                         
-                        <span class="card-title">npm,看这篇就够了</span>
+                        <span class="card-title">加油！</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            npm 相关 package.json 组件开发及发布
+                            网安路漫漫，愿与君同行00x1就我自己所参加或者了解的各类安全赛事来说，学了安全你会发现你什么都要去了解，或者是什么都要去懂，尝试安全类型的比赛都是刷下面的这题库里面的题目，如果几大题目全部刷完，打我们这种类型的比赛随便打。
+00x2我给大
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/npm/" class="post-category">
-                                    npm
+                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="post-category">
+                                    -web渗透
                                 </a>
                             
                             
@@ -1171,8 +1163,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/npm/">
-                        <span class="chip bg-color">npm</span>
+                    <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                        <span class="chip bg-color">-web渗透</span>
                     </a>
                     
                 </div>

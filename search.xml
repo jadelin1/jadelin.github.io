@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>记学校旁站测试</title>
+      <link href="/2021/12/13/ji-xue-xiao-pang-zhan-ce-shi/"/>
+      <url>/2021/12/13/ji-xue-xiao-pang-zhan-ce-shi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> 在校无聊的时候上学校网站逛了一波波，无意间点开了一个网站。</p><p><img src="1.png"></p><p>这我匝一看，这页面，这界面感动啊。抱着尝试的心态试了一试。</p><p>头像和相册都可以文件上传成功。</p><p><img src="2.png"></p><p><code>然后bp重放了，</code></p><p><img src="3.png"></p><p><code>上传成功</code></p><p><img src="3.jpg"></p><p>还好不是跟网络教学平台那个网站一样坑，找不到上传文件的路径。</p><p>在源码里面找到了路径，直接连接一波。</p><p><img src="4.jpg"></p><p>还是个root权限，哈哈。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> -web渗透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -web渗透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>加油！</title>
       <link href="/2021/07/10/ctf-lian-xi/"/>
       <url>/2021/07/10/ctf-lian-xi/</url>
