@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jadelin.top/2022/05/30/bi-sai-poc/</loc>
-    
-    <lastmod>2022-06-09</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jadelin.top/2022/05/30/poc/</loc>
     
     <lastmod>2022-06-09</lastmod>
@@ -130,14 +123,14 @@
 
   
   <url>
-    <loc>http://jadelin.top/tags/npm/</loc>
+    <loc>http://jadelin.top/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jadelin.top/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>http://jadelin.top/tags/npm/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -167,14 +160,14 @@
 
   
   <url>
-    <loc>http://jadelin.top/categories/npm/</loc>
+    <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>http://jadelin.top/categories/npm/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
