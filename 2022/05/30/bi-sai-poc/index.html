@@ -319,7 +319,7 @@ i">
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'dc3ba09a55512dad003f4ec8edcee0545b0fc2ca35f66e1a2aabd04422bfe059';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -500,11 +500,6 @@ i">
                 
 				
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
             </div>
             
         </div>
@@ -1148,11 +1143,12 @@ i">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/05/30/poc/">
+                <a href="/2022/05/30/bi-sai-poc/">
                     <div class="card-image">
                         
                         
@@ -1179,16 +1175,29 @@ i
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-30
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            jadelin
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="post-category">
+                                    -web渗透
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                        <span class="chip bg-color">-web渗透</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1438,23 +1447,11 @@ i
             <a href="http://jadelin.top" target="_blank">jadelin</a>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.1k</span>&nbsp;字
+                class="white-color">8.5k</span>&nbsp;字
             
             
             
             
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
             
             
             <span id="sitetime">载入运行时间...</span>
@@ -1624,25 +1621,6 @@ $(function () {
     
 
     <!-- 不蒜子统计网站数据 -->
-
-
-<script>
-    
-    function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "/libs/others/busuanzi.pure.mini.js";
-        element.async = true; 
-        document.body.appendChild(element);
-    }
-    if (window.addEventListener){
-        window.addEventListener("load", downloadJSAtOnload, false);
-    }
-    else if (window.attachEvent){
-        window.attachEvent("onload", downloadJSAtOnload);
-    }
-    else window.onload = downloadJSAtOnload;
-</script>
-<!-- <script async src="/libs/others/busuanzi.pure.mini.js"></script> -->
 
     
 
