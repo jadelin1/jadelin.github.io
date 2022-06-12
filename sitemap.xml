@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jadelin.top/2022/06/12/2022-06-12/</loc>
+    
+    <lastmod>2022-06-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jadelin.top/2021/10/20/ctfshow-shua-ti-ji-lu/</loc>
     
     <lastmod>2022-06-12</lastmod>
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://jadelin.top/categories/index.html</loc>
+    <loc>http://jadelin.top/archives/index.html</loc>
     
     <lastmod>2020-03-07</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jadelin.top/archives/index.html</loc>
+    <loc>http://jadelin.top/categories/index.html</loc>
     
     <lastmod>2020-03-07</lastmod>
     
@@ -137,7 +144,7 @@
 
   
   <url>
-    <loc>http://jadelin.top/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>http://jadelin.top/tags/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -145,6 +152,13 @@
   
   <url>
     <loc>http://jadelin.top/tags/npm/</loc>
+    <lastmod>2022-06-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jadelin.top/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -174,7 +188,7 @@
 
   
   <url>
-    <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>http://jadelin.top/categories/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -182,6 +196,13 @@
   
   <url>
     <loc>http://jadelin.top/categories/npm/</loc>
+    <lastmod>2022-06-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
