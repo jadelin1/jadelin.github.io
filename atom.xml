@@ -6,7 +6,7 @@
   <link href="http://jadelin.top/atom.xml" rel="self"/>
   
   <link href="http://jadelin.top/"/>
-  <updated>2022-06-10T14:23:28.750Z</updated>
+  <updated>2022-06-12T09:37:32.761Z</updated>
   <id>http://jadelin.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://jadelin.top/2022/05/30/bi-sai-poc/"/>
     <id>http://jadelin.top/2022/05/30/bi-sai-poc/</id>
     <published>2022-05-30T01:02:35.000Z</published>
-    <updated>2022-06-10T14:23:28.750Z</updated>
+    <updated>2022-06-12T09:37:32.761Z</updated>
     
     
       
@@ -80,6 +80,31 @@
         
         
     <summary type="html">&lt;h2 id=&quot;任务一：namp扫描测试&quot;&gt;&lt;a href=&quot;#任务一：namp扫描测试&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="-web渗透" scheme="http://jadelin.top/categories/web%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="-web渗透" scheme="http://jadelin.top/tags/web%E6%B8%97%E9%80%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ctfshow刷题记录</title>
+    <link href="http://jadelin.top/2021/10/20/ctfshow-shua-ti-ji-lu/"/>
+    <id>http://jadelin.top/2021/10/20/ctfshow-shua-ti-ji-lu/</id>
+    <published>2021-10-20T15:18:30.000Z</published>
+    <updated>2022-06-12T09:37:35.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;爆破&quot;&gt;&lt;a href=&quot;#爆破&quot; class=&quot;headerlink&quot; title=&quot;爆破&quot;&gt;&lt;/a&gt;爆破&lt;/h1&gt;&lt;h2 id=&quot;web21&quot;&gt;&lt;a href=&quot;#web21&quot; class=&quot;headerlink&quot;</summary>
         
       
     
