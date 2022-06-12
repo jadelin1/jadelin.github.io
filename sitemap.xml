@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jadelin.top/2021/11/03/yi-ci-mou-ping-tai-shang-mian-de-ti-mu-jie-ti-guo-cheng/</loc>
+    
+    <lastmod>2022-06-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jadelin.top/2022/05/30/bi-sai-poc/</loc>
     
     <lastmod>2022-06-10</lastmod>
@@ -116,7 +123,7 @@
 
   <url>
     <loc>http://jadelin.top/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -124,35 +131,35 @@
   
   <url>
     <loc>http://jadelin.top/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/tags/npm/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/tags/web%E6%B8%97%E9%80%8F/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/tags/%E5%85%8D%E6%9D%80/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -161,35 +168,35 @@
   
   <url>
     <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/categories/npm/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/categories/web%E6%B8%97%E9%80%8F/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jadelin.top/categories/%E5%85%8D%E6%9D%80/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
