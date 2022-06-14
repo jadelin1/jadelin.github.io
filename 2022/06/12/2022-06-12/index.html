@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="2022-6-12, 后来听着风 看着秋 孤独的人总是不会善言辞. jadelin的博客">
-    <meta name="description" content="网安路漫漫，愿与君同行。
-　　正如《纪念》歌中提起的，“时间一转眼就过去了三年一切在我心里开的好皎洁，现在倒计时也不剩几天。”，忆起大学三年恍如昨日一般，记得19年初入校园的那日，我并没有跟别的同学初入大学的那种喜悦之情。我有的只是一股不知">
+    <meta name="description" content="网安路漫漫">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -322,8 +321,24 @@
 
 
 
+
+
 <div class="bg-cover pd-header post-cover" style="background-image: url('0')">
+    <!-- 网站全局深色模式设置结束 -->
+<!-- 添加首页banner视频背景开始 -->
+<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+<style>
+    #index-video { z-index: -1; position: absolute; top: 150; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/11/BMjAyMTA0MTcxMTI4MTFfMTg1ODk2MDg4N180Nzk1ODkxODA3NV8xXzM=_b_B9a29e9e0917f8f86ff3a9aacaaf8d9d3.mp4"> 
+     
+</video>
+<!-- 添加首页banner视频背景结束 -->
     <div class="container" style="right: 0px;left: 0px;">
+        
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
@@ -1064,8 +1079,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            网安路漫漫，愿与君同行。
-　　正如《纪念》歌中提起的，“时间一转眼就过去了三年一切在我心里开的好皎洁，现在倒计时也不剩几天。”，忆起大学三年恍如昨日一般，记得19年初入校园的那日，我并没有跟别的同学初入大学的那种喜悦之情。我有的只是一股不知
+                            网安路漫漫
                         
                     </div>
                     <div class="publish-info">
@@ -1115,18 +1129,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            webweb1robots.txt协议
-
-
-web2简单sql注入
-先查看有几个字段
-1’ order by 4#
-
-联合查询，查数据库
-?id=-1’ union select 1,2,3,database()#
-
-联合查询数据库的表
-i
+                            比赛poc
                         
                     </div>
                     <div class="publish-info">
