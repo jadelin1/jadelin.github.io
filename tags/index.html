@@ -304,7 +304,111 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
+    
+<!-- 网站全局深色模式设置结束 -->
+<!-- 添加首页banner视频背景开始 -->
+<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <source src="https://txmov2.a.kwimgs.com/upic/2022/06/15/00/BMjAyMjA2MTUwMDEzMThfMzU5MDEyODg1Xzc2Nzk2NDE0NDQwXzFfMw==_b_B85d311303807a8b109b58f196ad99dce.mp4?clientCacheKey=3xjiw569qsgf6g9_b.mp4&tt=b&di=df4d6cf7&bp=10000">
+    <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/16/22/BMjAyMTA0MTYyMjI2MjJfMTg1ODk2MDg4N180NzkzNzE2MzM1NF8xXzM=_b_B1cee98c70455b5ec6bdf05a3b739b606.mp4?pkey=AAUB10mjUylh71C1rT9zUK0k7UZXKh1t4JWavNQoALGAQ6zneNmw9-AJVJdj34LwUjF_C7Nvu_N3ZiM0NeFWVZ3HcLV-HnVcDlk07fDiX_9gwyjYVtx0HdfgCak15LCtfdw&tag=1-1618583324-xpcwebprofile-0-3swr1wcvno-ca64b2bbd036006d&clientCacheKey=3xdk95zbjuu2b4q_b.mp4"> -->
+     <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/09/BMjAyMTA0MTcwOTU1MzlfMTg1ODk2MDg4N180Nzk1MzM5OTIyOV8xXzM=_b_Bb252492fbcbbfc1729d70bff84a369c1.mp4?pkey=AAUyFZx1DUzqe5a0YzevoNiJ5H4y-8qHn-6CxvZWGq3f7eaAZkH4TQ0MlCby2tu8KDKdjqFPWc6uK2CU6EynJwbOK4jy6fWaXpMJ4Jg2VONv2g4UEnb2QYdrZr9b_rI9yYE&tag=1-1618624606-xpcwebprofile-0-m7ojwj7hjp-39b38c9093fe954a&clientCacheKey=3x7baqkyiuj45k2_b.mp4"> -->
+    <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/11/BMjAyMTA0MTcxMTI4MTFfMTg1ODk2MDg4N180Nzk1ODkxODA3NV8xXzM=_b_B9a29e9e0917f8f86ff3a9aacaaf8d9d3.mp4"> -->
+</video>
+<!-- 添加首页banner视频背景结束 -->
+
+
+<style>
+    .button-caution {
+        background-color: #FF4351;
+        border-color: #FF4351;
+        color: #FFF;
+    }
+
+    .button {
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        text-decoration: none;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 40px;
+        margin: 0;
+        display: inline-block;
+        appearance: none;
+        cursor: pointer;
+        border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+    }
+
+
+    .button-glow.button-caution {
+        -webkit-animation-name: glowing-caution;
+        animation-name: glowing-caution;
+    }
+
+    @-webkit-keyframes glowing-caution {
+        from {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+
+        50% {
+            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+        }
+
+        to {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+    }
+
+    @keyframes glowing-caution {
+        from {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+
+        50% {
+            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+        }
+
+        to {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+    }
+
+    .button-caution:hover {
+        background-color: #ff7680;
+        border-color: #ff7680;
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -349,6 +453,7 @@
 
     </div>
 </div>
+
 
 
 

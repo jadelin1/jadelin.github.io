@@ -525,7 +525,21 @@
 
                 <div class="introduction center-align" data-aos="fade-up">莫羡江城春初来， 独倚楼台花盛开。 潋滟几度凭栏吊， 边野樱红悦谁容。</div>
 
-                <style type="text/css">
+                
+<!-- 网站全局深色模式设置结束 -->
+<!-- 添加首页banner视频背景开始 -->
+<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <source src="https://alimov2.a.kwimgs.com/upic/2022/06/15/00/BMjAyMjA2MTUwMDEzMDdfMzU5MDEyODg1Xzc2Nzk2NDA1MDE2XzFfMw==_b_Bf03dc9c8c860715858fa0cec0f0e4a81.mp4?clientCacheKey=3xkbs5iaxvpun9i_b.mp4&tt=b&di=df4d6cf7&bp=10000"> 
+     
+</video>
+<!-- 添加首页banner视频背景结束 -->
+<style type="text/css">
     #posts-chart,
     #categories-chart,
     #tags-chart {
@@ -535,7 +549,6 @@
         padding: 0.5rem;
     }
 </style>
-
 <div id="postCharts" class="post-charts">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="far fa-bar-chart"></i>&nbsp;&nbsp;文章统计图
