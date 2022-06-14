@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>爬dy-ks-bibilili视频</title>
+      <link href="/2022/06/14/pa-dy-ks-bibilili-shi-pin/"/>
+      <url>/2022/06/14/pa-dy-ks-bibilili-shi-pin/</url>
+      
+        <content type="html"><![CDATA[<h2 id="抖音爬虫"><a href="#抖音爬虫" class="headerlink" title="抖音爬虫"></a>抖音爬虫</h2><p>一直想给博客换个</p><p>f12 手机模式打开，复制的链接输入到浏览器中，network搜索?item</p><p><img src="3.png"></p><p><img src="1.png"></p><p>发现?item_ids=的值与url的值是一样的。</p><p><img src="2.png"></p><p>复制打开第二章图片的<a href="https://www.iesdouyin.com/web/api/v2/aweme/iteminfo/?item_ids=7105696234698067207">request url</a>，是一个json的文件</p><p><img src="4.png"></p><p>获取play_addr，其实后面的url_list打开就是视频。</p><img src="5.png" style="zoom: 100%;"><p>主要还是看代码</p><p>搜索?item</p><pre><code>from urllib.parse import urlparse    #爬虫库的一个模块urlparseimport requests                        #import re                            #headers = {    "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}        #请求头print("===&gt;欢迎使用抖音视频去水印提取工具")print("===&gt;请输入抖音链接中的短链接（eg：https://v.douyin.com/sLvq6P/）")input_url = input("===&gt;")#定义了一个函数，用正则去匹配。preurl = re.findall(r'(?&lt;=douyin.com\/)\w+\/', input_url, re.I | re.M)#拼接能访问的urlurl = "https://v.douyin.com/" + preurl[0]#去请求访问上面拼接的urlget = requests.get(url, headers=headers)html = get.contentreq= get.urlurl = reqparse = urlparse(url)        #urlparse模块itemid = parse.path            #定义itemid的path数组，这里的itemid是上面？item_ids的值itemids = (itemid[13:32])    #取这个数组里面的13到32的字符串#拼接新的urlvideourl = "https://www.iesdouyin.com/web/api/v2/aweme/iteminfo/?item_ids=" + itemidsprint(videourl)videoopen = requests.get(videourl, headers=headers)vhtml = videoopen.text#正则json网站里面的uri的值uri = re.findall(r'(?&lt;=\"uri\":\")\w{32}(?=\")', str(vhtml))print(uri[0])#组成去水印的urlplay_addr = "https://aweme.snssdk.com/aweme/v1/play/?video_id=" + uri[0] + \"&amp;ratio=720p&amp;line=0"print("===&gt;复制下面的长链接到手机浏览器打开即可得到无水印视频\n===&gt;" + play_addr)name = input("===&gt;正在下载保存视频,请输入视频名称：")video = requests.get(url=play_addr, headers=headers)with open(name + ".mp4", 'wb')as file:    file.write(video.content)    file.close()    print("===&gt;视频下载完成！")input("===&gt;press enter key to exit!")</code></pre><h2 id="快手"><a href="#快手" class="headerlink" title="快手"></a>快手</h2><p>f12 手机模式打开，network搜索upic，快手直接搜索upic在返回里面找一下就能直接找到了。</p><p><a href="https://v2.kwaicdn.com/upic/2022/03/26/16/BMjAyMjAzMjYxNjI3NDBfMjc4OTg2NV83MDUwODAzOTg1Nl8xXzM=_b_B6de483383ae87374db45daaf55b6e7df.mp4?pkey=AAUn7o5RsNhndZzjN1GSrO6rON8UZWadWb2XZ1wGwtsVm2qu0C7vbPBaA0GvGutIBUQBICS2aZN53xI4cPy1DjORzAmGRAPVevPjXdV1I8QNIzqdnNQxsOHHKBH8upVx9os&amp;clientCacheKey=3xhjezn3vt277ta_b.mp4&amp;tt=b&amp;di=df4d6cf7&amp;bp=13380">https://v2.kwaicdn.com/upic/2022/03/26/16/BMjAyMjAzMjYxNjI3NDBfMjc4OTg2NV83MDUwODAzOTg1Nl8xXzM=_b_B6de483383ae87374db45daaf55b6e7df.mp4?pkey=AAUn7o5RsNhndZzjN1GSrO6rON8UZWadWb2XZ1wGwtsVm2qu0C7vbPBaA0GvGutIBUQBICS2aZN53xI4cPy1DjORzAmGRAPVevPjXdV1I8QNIzqdnNQxsOHHKBH8upVx9os&amp;clientCacheKey=3xhjezn3vt277ta_b.mp4&amp;tt=b&amp;di=df4d6cf7&amp;bp=13380</a></p><h2 id="bibilili"><a href="#bibilili" class="headerlink" title="bibilili"></a>bibilili</h2><p>b站的更简单，f12 手机模式打开，network搜索MP4就能找到视频地址。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> -杂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -杂 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2022-6-12</title>
       <link href="/2022/06/12/2022-06-12/"/>
       <url>/2022/06/12/2022-06-12/</url>

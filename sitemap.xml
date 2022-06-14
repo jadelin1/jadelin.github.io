@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jadelin.top/2022/06/14/pa-dy-ks-bibilili-shi-pin/</loc>
+    
+    <lastmod>2022-06-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jadelin.top/2021/07/10/ctf-lian-xi/</loc>
     
     <lastmod>2022-06-14</lastmod>
@@ -185,6 +192,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://jadelin.top/tags/%E6%9D%82/</loc>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -224,6 +238,13 @@
   
   <url>
     <loc>http://jadelin.top/categories/%E5%85%8D%E6%9D%80/</loc>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jadelin.top/categories/%E6%9D%82/</loc>
     <lastmod>2022-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
