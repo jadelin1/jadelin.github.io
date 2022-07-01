@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://jadelin.top/categories/index.html</loc>
+    <loc>http://jadelin.top/archives/index.html</loc>
     
     <lastmod>2020-03-07</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jadelin.top/archives/index.html</loc>
+    <loc>http://jadelin.top/categories/index.html</loc>
     
     <lastmod>2020-03-07</lastmod>
     
@@ -179,14 +179,14 @@
   </url>
   
   <url>
-    <loc>http://jadelin.top/tags/ctf%E6%90%AD%E5%BB%BA/</loc>
+    <loc>http://jadelin.top/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jadelin.top/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://jadelin.top/tags/ctf%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2022-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
